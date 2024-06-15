@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/定妝1.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/定妝1.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/定妝5.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/定妝3.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/定妝4.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>超光肌控油定妝噴霧100ml</h1>
+                <p class="price">NT$1,200</p>
+                <p><li>急速保濕不卡紋</li></p>
+                <p><li>隨時補水喚起肌膚水潤</li></p>
+                <p><li>妝後長效鎖水不脫妝</li></p>
+          
+                <div class="size-option">
+                    <label for="size">數量</label>
+                    <select id="size" name="size">
+                        <option value="01">1</option>
+                        <option value="01">2</option>
+                        <option value="01">3</option>
+                        <option value="01">4</option>
+                        <option value="01">5</option>
+                        <option value="01">6</option>
+                        <option value="01">7</option>
+                        <option value="01">8</option>
+                        <option value="01">9</option>
+                        <option value="01">10</option>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/定妝6.webp" alt="Product Feature"></div>
+             <p> <b>掌握油水平衡
+                三大溫和成分控油保濕</b>
+            <li>一噴質感霧光 柔焦定妝</li>
+            <li>NEW 微米細緻噴霧</li>
+            <li>24 HOURS*長效持妝</li>
+            <li>新型液態蜜粉粉噴霧</li>
+            <li>控油粉末質地，改善肌膚油水平衡</li>
+            <li>細緻粉體迅速改妝不失手</li></p><br>
+                <p>
+                    <b>打造持久妝感的秘密武器</b><br><br>
+                    <b>1.new</b><br>微米細緻噴霧<br><br>
+                    <b>2.94HOURS*</b><br>長效持妝<br><br>
+                    <b>3.新型液態蜜粉</b><br>
+                    粉噴霧
+                </p>
+                </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>夏天要維持妝容一定要買起來</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>品質優良，出貨速度快，會再回購</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>炎炎夏日，完妝必備的用品。 噴了的確比較不脫妝👍</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>之前都用持久的那瓶，夏天到了，這次換控油的試試</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+            <table>
+                <tr>
+                    <th>品牌名稱</th>
+                    <td>MAKE UP FOR EVER</td>
+                </tr>
+                <tr>
+                    <th>品牌定位</th>
+                    <td>專櫃</td>
+                </tr>
+                <tr>
+                    <th>功效</th>
+                    <td>定妝</td>
+                </tr>
+    
+                <tr>
+                    <th>色調</th>
+                    <td>透明</td>
+                </tr>
+
+            </table>
+            <p>超光肌控油定妝噴霧100ml</p>
+            <ul class="note">
+                <li>◆注意事項：限外用，使用前請詳閱包裝盒外(本體外)之說明，如有任何異常現象請暫停使用，並立即就醫診治。</li>
+                <li>◆退換貨事項：除商品本身有瑕疵可辦理退貨，商品一經使用或損毀即不可退貨，退貨必須保留紙箱及商品。</li>
+                <li>◆商品圖片僅供實物參考。內容物組成以實物及商品說明為主。</li>
+            </ul>
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

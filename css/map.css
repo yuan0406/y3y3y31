@@ -1,0 +1,245 @@
+body {
+    background-blend-mode: multiply;
+    background-image: url("img/lipstick3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "tetai-2";
+}
+
+.about_container {
+    width: 100%;
+    margin: 23px 0 0 0;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.selfbox {
+    width: 350px;
+    margin: 30 auto;
+    display: flex;
+    position: relative;
+}
+
+.self_img {
+    max-width: 340px;
+    max-height: 380px;
+    margin: 0 auto;
+    display: block;
+}
+
+.self_img>img {
+    border-radius: 8px;
+}
+
+.self_txt {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(54, 33, 33, 0.6);
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s;
+    backdrop-filter: blur(3px);
+    color: #f3e0e0;
+    font-size: 18.5px;
+    border-radius: 8px;
+    width: 340px;
+}
+
+.self_ig {
+    max-width: 160px;
+    max-height: 160px;
+    float: left;
+    display: flex;
+}
+
+.self_txt:hover {
+    opacity: 1;
+}
+
+.map {
+    width: 600px;
+    height: 600px;
+}
+
+.map>iframe {
+    border-radius: 8px;
+}
+
+.block {
+    margin: 10px 10px;
+    height: 750px;
+    background-color: rgba(193, 187, 171, 0.664);
+    border-radius: 20px;
+    line-height: 20px;
+}
+
+/*地圖*/
+.r-main-article-map {
+    height: 600px;
+    margin: 50px 100px;
+    background-color: rgba(196, 191, 176, 0.664);
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+}
+
+.r-main-article-map-pic {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-left: 7%;
+    border-radius: 10px;
+}
+
+.r-main-article-map-piccontent {
+    width: 200px;
+    font-size: 28px;
+    background-color: rgba(222, 222, 231, 0.63);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/*地圖圖標*/
+.r-m-a-map-piccontent-titlepic {
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    animation: ani 1s linear infinite;
+}
+
+.r-m-a-map-piccontent-titlepic::before {
+    content: " ";
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.r-m-a-map-piccontent-titlepic::after {
+    content: " ";
+    position: absolute;
+    left: -50px;
+    width: 50px;
+    height: 100px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    20% {
+        transform: rotate(0deg) scale(.8);
+    }
+
+    40% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    60% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    80% {
+        transform: rotate(0deg) scale(1.3);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.r-m-a-map-piccontent-titlepic>img {
+    height: 100%;
+    width: 100%;
+}
+
+.r-m-a-map-piccontent-text {
+    margin: auto;
+}
+
+.r-main-article-map-pic {
+    overflow: hidden;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+/*聯絡我們*/
+.r-main-article-map-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+.r-main-article-map-textbox {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-color: rgba(180, 152, 162, 0.63);
+    border-radius: 10px;
+}
+
+.r-main-article-map-text {
+    font-size: 24px;
+    height: 50px;
+    width: 350px;
+    margin: 30px auto;
+    background-color: #9c6d8f;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.r-main-article-map-text-content {
+    margin: auto;
+}
+
+.r-m-a-map-text-Enter {
+    height: 30px;
+    width: 230px;
+}
+
+.r-main-article-map-bigtext {
+    height: 150px;
+    width: 350px;
+    margin-left: 75px;
+    background-color: rgb(235, 243, 251);
+}
+
+.r-main-article-map-bigtext>textarea {
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.r-main-article-map-btn {
+    height: 40px;
+    background-color: #9c6d8f;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: 115px;
+    border-radius: 5px;
+    border: rgb(87, 86, 86) 1px solid;
+    cursor: pointer;
+}
+
+.r-main-article-map-box {
+    display: flex;
+}

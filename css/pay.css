@@ -1,0 +1,437 @@
+*{
+    box-sizing:border-box;
+    font-family: 微軟正黑體;
+    color:#3E3D39;
+    display:flexbox;
+}
+
+body{
+    background-color: #fff;
+    margin:0px;
+    padding: auto;
+    padding-bottom: 2.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center; 
+    background-color:#d3a297;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 30px;
+}
+nav{
+    display: flex;
+    justify-content: right; 
+}
+
+nav a {
+    padding: 16px;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    color: white;
+    font-size: 20px
+}
+
+/*導航欄start*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #3E3D39;
+}
+/*導航欄end*/
+
+
+.righticon {
+    display: flex;
+    align-items: center;
+}
+.iconfont {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+.search input {
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    outline: none;
+    transition: all .2s;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: #fff;
+}
+
+.search input:hover {
+    border-color: #b0b0b0;
+    background-color: #fff;
+}
+
+.search button {
+    width: 52px;
+    height: 46px;
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 20px; 
+    left: 0;
+    z-index: 10;
+    height: 80px;
+    top: 30px;
+}
+
+.content.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.input-container {
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.content input {
+    width: 70%;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    transition: all .2s;
+    background: none;
+    border: 0px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.content button {
+    width: 52px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: 0px;
+    font-size: 20px;
+    color: black;
+    background-color: #fff;
+}
+
+.hot-list a {
+display: block;
+margin-bottom: 10px; 
+font-size: 18px;
+text-decoration: none;
+width: 50%;
+background-color: #fff;
+}
+
+.hot-list>a{
+    display: block;
+    color: #424242;
+    font-size: 12px;
+    padding: 6px 15px;
+    text-align: left;
+    height: 18px;
+    background-color: #fff;
+}
+
+.hot-list>a:hover{
+    background-color: #e0e0e0;
+
+}
+
+.no1 {
+    background-color: #f1f1f1;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #424242;
+}
+.no1 p {
+    margin: 3px 0; 
+    color: #424242
+}
+
+.hidden-table-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+.hidden-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.hidden-table th, .hidden-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.hidden-table th {
+    background-color: #b48a82;
+}
+
+.total-price {
+    text-align: right;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.show {
+    max-height: 500px; /* Adjust this value as needed */
+    transition: max-height 0.5s ease-in;
+}
+
+.details-container {
+    display: flex;
+    width: 80%; 
+    margin: auto; 
+    gap: 5%;
+    position: relative; 
+    padding-bottom: 60px; 
+}
+
+.no2-container, .no3-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5%;
+}
+
+.no2, .no4, .no3, .no5 {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px; 
+    padding-top: 10px;
+}
+
+.no2 {
+    flex: 1;
+    background-color: #f1f1f1;
+}
+
+.customer-details label, .form-group label {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.customer-details input, .form-group select {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#address,#shop{
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#nname input{
+    height: 20px;
+}
+
+.no4 {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 10px; 
+}
+
+.no3 {
+    flex: 1;
+    background-color: #f1f1f1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.shipping-method {
+    width: 100%;
+}
+
+.inline-group .form-group {
+    flex: 1;
+}
+
+#address-info, #store-info {
+    margin-top: 20px;
+}
+
+#address-info h4, #store-info h4 {
+    margin-left: 10px;
+}
+
+#address-info p, #store-info p {
+    margin-left: 15px;
+}
+
+.edit-button, .add-edit-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #d3a297;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-button:hover, .add-edit-button:hover {
+    background-color: #d3a298;
+}
+
+.confirm-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #d3a297;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.confirm-button:hover {
+    background-color: #d3a297;
+}
+
+#confirmOrderMainBtn {
+    position: absolute;
+    bottom: 5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    background-color: #d3a297;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmOrderMainBtn:hover {
+    background-color: #b48a82;
+}
+
+#confirmOrderBtn,#cancelOrderBtn{
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #d3a297;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup> beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/dior0301.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/dior0301.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/dior0302.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/dior0303.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/dior0304.webp" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/dior0305.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>J'ADORE</h1>
+                <p>女性的詠嘆調 ，歌頌她的美麗與勇氣</p>
+                <p class="price">NT$4,750</p>
+                <p>實現唯有花與水的高濃度香氛</p>
+                <p>經典花束香氣帶來嶄新風貌</p>
+                <p>盡情展現頂級香氛花卉的清新感動</p>
+                <div class="color-options">
+                    <label for="color">顏色</label>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: #ECECEC;" data-size="01"></div>
+                        <div class="color-box" style="background-color: #F4C548;" data-size="02"></div>
+                        <div class="color-box" style="background-color: #F0CC96;" data-size="03"></div>
+                        <div class="color-box" style="background-color: #ECB3AC;" data-size="04"></div>
+                        <div class="color-box" style="background-color: #DC9928;" data-size="05"></div>
+                    </div>
+                          </div>
+                
+                <div class="size-option">
+                    <label for="size">款式</label>
+                    <select id="size" name="size">
+                        <option value="01">J‘ADORE澄淨香氛</option>
+                        <option value="02">J'adore頂級金緻香精</option>
+                        <option value="03">J'adore香氛</option>
+                        <option value="04">J'ADORE 淡香水</option>
+                        <option value="05">J'ADORE極蘊香氛</option>
+                        <option value="06">迪奧J'adore澄淨香氛潤澤組</option>
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/dior0306.png" alt="Product Feature">
+                <p><B>J‘ADORE澄淨香氛</B><Br>無酒精香氛–清新花束香氣
+                    <br><br>全新J‘ADORE澄淨香氛，以水基底清新花束香氣<br>
+                    重新定義J'adore香氛系列1999年面世以來，從不令人失望的愉悅感官感受。
+                    歡愉的香氣印記，像是重綁了一把更自然的J'adore花束：<br>
+                    來自南法瓦勒麗（Vallauris）橙花，為香氛注入滿滿的清新，小花茉莉如陽光般燦爛，交織絲絨柔順的木蘭花香。
+                    <br>這是獻給 J’adore白色花香的真摯歌詠，清新動人，自然猶如發自內心。<br><br>
+                </p>
+                <p><B>J'ADORE頂級金緻香精</B><Br>
+                    <br>J'adore頂級金緻香精，凝鍊J'adore 經典花束的奢華純粹。<br>
+                    迪奧香水創意總監 Francis Kurkdjian 突顯J'adore花香的細膩多采，展現J'adore 的奢華華美，更繽紛耀眼。<br>
+                    層次飽滿、馥郁深邃，讓橙花、大花茉莉、五月玫瑰彷彿展開了對話。<br>
+                    香精擷取了花朵盛放滿開的頂級風華，香氣強烈而感性：<br>這就是J'adore的金緻芳心。<Br><br></p>
+                <p><B>J'ADORE香氛</B><Br>
+                   <br>
+                   經典J'adore香氛是獻給女性的花香詠嘆調，優雅完美。<br>
+                   花束香氣嫵媚性感，精心演繹每一個香氛細節，宛如一朵量身訂製的花朵。<br>
+                   歡愉甜美的伊蘭伊蘭香精，散發出迷人花果香氣；<br>
+                   土耳其大馬士革玫瑰香精，調和格拉斯千葉茉莉和印度小花茉莉的絕唱，煥發醉人果香熱情洋溢。<Br><br>
+                </p>
+                <p><B>J'ADORE 淡香水</B><Br>淡香水–花香及柑橘調<br>
+                    <br>
+                    「J'adore 淡香水是對J'adore 香精的詮釋，交織花香與柑橘香調，是一款沐浴在金燦光芒中的香水。<br>
+                    燦爛的花束香調核心來自法國南部格拉斯瓦洛里地區。<br>
+                    花中瑰寶格拉斯橙花帶來溫暖迷人的氣息，注入於淡香水中，帶來獨具一格的個性。<br>
+                    香水瓶身曲線演繹迪奧先生鍾愛的經典細頸瓶，靈感來自DIOR品牌幸運數字 8，呈現優美的曲線。    <br><br>       </p>
+                <p><B>J'ADORE極蘊香氛</B><Br><br>
+                    DIOR經典J'ADORE香氛系列，全新創作《J'ADORE極蘊香氛》，為包覆感官、充滿力量的性感花香氣。<br>
+                    以馥郁奔放的花朵：<br>
+                    格拉斯玫瑰、茉莉、依蘭依蘭，交織出一抹無限蔓延的香氣，並以帶有乳香氣息的檀香，點綴出木質香調<br>
+                    最後一抹由迪奧獨家合作莊園栽種的格拉斯晚香玉，綻放明亮又令人沉醉的張力。
+                    《J'ADORE極蘊香氛》是一款承襲經典J'ADORE香氛，卻又充滿驚喜的全新香氣，更加奔放誘人，綻放無盡魅力！<br>
+                </p>
+                <p>
+                    <b>迪奧J'ADORE澄淨香氛潤澤組</b><br><br>
+                    DIOR經典女香系列J'adore，透過清新花束香調，歌頌女性的自信優雅。<br>
+                    佳節當前，DIOR悉心推出限量《J'adore澄淨香氛潤澤組》，一次收入2款系列產品，來場舒心療癒的香氛體驗。<br><br>
+                    禮盒內含：<br>
+                    –J'adore澄淨香氛 50ml<br>
+                    全新J'adore澄淨香氛，重新定義J'adore 經典清新花束香。<br>
+                    來自DIOR獨家專利無酒精配方，以水為基底，香味持久繚繞。<br><br>
+                    –J'adore香氛滋潤精露 75ml<br>
+                    質地輕盈的滋潤精露，輕抹肌膚保濕水潤，不黏膩。
+                </p>
+            </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>喜歡香味舒服的淡淡的。</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>很喜歡，味道很棒！送人、自用兩相宜！</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>出貨速度快，包裝仔細精美</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>花香味濃郁，出貨快速 味道持續時間長</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+                <p><b>J'ADORE</b></p>
+                <table>
+                    <tr>
+                        <th>品牌名稱</th>
+                        <td>Dior 迪奧</td>
+                    </tr>
+                    <tr>
+                        <th>香味</th>
+                        <td>玫瑰調 花果調 花香調 柑橘調</td>
+                    </tr>
+                    <tr>
+                        <th>品牌定位</th>
+                        <td>專櫃</td>
+                    </tr>
+                    <tr>
+                        <th>濃度</th>
+                        <td>淡香水EDT</td>
+                    </tr>
+                    <tr>
+                        <th>對象與族群</th>
+                        <td>女性 男性 中性</td>
+                    </tr>
+                    <tr>
+                        <th>款式</th>
+                        <td>一般</td>
+                    </tr>
+                    <tr>
+                        <th>容量</th>
+                        <td>30ml 50ml 100ml</td>
+                    </tr>
+                    <tr>
+                        <th>用途</th>
+                        <td>身體芳香</td>
+                    </tr>
+                </table>
+                <p><b>注意事項：</b></p>
+
+                    <li>使用後若有過敏請即刻停止使用並請教醫師。</li>
+                    <li>請將商品放置陰涼處以避免變質。</li>
+                    <li>請置於陰涼處，請勿直接陽光照射，以免變質。</li>
+                    <li>因電腦螢幕設定及個人觀感之差異，本賣場之商品圖片僅供參考，以收到實際商品為準。</li>
+                    <li>本產品屬於私人消耗性產品，已拆封或使用過、無法恢復原狀、商品外盒損壞等均恕無法辦理退換貨。</li>
+
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+            <div class="content1">
+                <div class="section reminder">
+                    <h2>提醒您：</h2>
+                    <ul>
+                        <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                        <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                    </ul>
+                </div>
+                <div class="section returns">
+                    <h2>退換貨須知：</h2>
+                    <ul>
+                        <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                        <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                        <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                    </ul>
+                </div>
+                <div class="section delivery">
+                    <h2>運送服務：</h2>
+                    <ul>
+                        <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                        <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                        <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                    </ul>
+                </div>
+                <div class="section after-sales">
+                    <h2>售後服務：</h2>
+                    <ul>
+                        <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                        <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup> beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup> beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/品木宣言0201.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/品木宣言0201.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/品木宣言0202.webp" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/品木宣言0203.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/品木宣言0204.webp" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                     </div>
+            </div>
+            <div class="product-info">
+                <h1>一舉兩得潔面慕絲</h1>
+                <p>質地溫和 不刺激 零乾澀</p>
+                <p class="price">NT$1,050</p>
+                <p>溫和洗淨彩妝</p>
+                <p>髒汙和油脂</p>
+ 
+                <div class="size-option">
+                    <label for="size">數量</label>
+                    <select id="size" name="size">
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/品木宣言0205.webp" alt="Product Feature">
+                <p><b>暢銷No.1潔面慕絲<br><br>一擧兩得潔面慕絲<bR>
+                    溫和清潔綿密保濕<br>
+                    <br><br></b>
+                    <b>敏弱肌膚危機重重<br>
+                        想要徹底清潔又怕緊繃乾澀？</b><bR><br>
+                            洗臉後肌膚<br>
+                            乾澀脫皮<br>
+                            毛孔汙垢殘留<br>
+                            粉刺堆積<br>
+                            出油迅速<br>
+                            難以控油<br><br>
+
+                    <b>用法：</b><br><br>
+                    STEP 1<br>
+                    電氣石萃取<bR>
+                    深入毛孔<br>
+                    淨化髒汙<br><br>
+                        STEP 2<br>
+                        闊葉巨藻精華<bR>
+平衡油水<br>
+減綏T字部位出油<br><br>
+                        STEP 3<br>
+                        薄荷精油<br>
+清新涼爽<br>
+舒缓放鬆<br>
+洗淨不乾澀<br>
+                    
+                </p>
+            </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>好用，清新香氣，適合早上使用!</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>清爽不黏膩，味道清香持久又不化學</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>洗完臉不乾不澀，又能清潔乾淨！</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>我早晚使用它，喜歡它淡淡的香味，而且洗完臉感覺很舒服，不緊繃</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+                <p><b>一舉兩得潔面慕</b></p>
+                <table>
+                    <tr>
+                        <th>品牌名稱</th>
+                        <td>ORIGINS 品木宣言</td>
+                    </tr>
+                    <tr>
+                        <th>品牌系列</th>
+                        <td>一舉兩得系列</td>
+                    </tr>
+                    <tr>
+                        <th>品牌定位</th>
+                        <td>專櫃</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>包裝組合</th>
+                        <td>單入組</td>
+                    </tr>
+                    <tr>
+                        <th>功效</th>
+                        <td>控油</td>
+                    </tr>
+                    <tr>
+                        <th>適用於</th>
+                        <td>全膚質適用 </td>
+                    </tr>
+            
+                </table>
+                <p><b>注意事項：</b></p>
+
+
+                    <li>依照消費者保護法規定，消費者均享有產品到貨10天猶豫期之權益(注意！不提供換貨服務，且猶豫期非試用期)</li>
+                    <li>商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態 (包含內外包裝、贈品等)</li>
+                    <li>請置於陰涼處，請勿直接陽光照射，以免變質。</li>
+                    <li>若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，否則將影響您退貨的權限。</li>
+              
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+            <div class="content1">
+                <div class="section reminder">
+                    <h2>提醒您：</h2>
+                    <ul>
+                        <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                        <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                    </ul>
+                </div>
+                <div class="section returns">
+                    <h2>退換貨須知：</h2>
+                    <ul>
+                        <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                        <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                        <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                    </ul>
+                </div>
+                <div class="section delivery">
+                    <h2>運送服務：</h2>
+                    <ul>
+                        <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                        <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                        <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                    </ul>
+                </div>
+                <div class="section after-sales">
+                    <h2>售後服務：</h2>
+                    <ul>
+                        <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                        <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup> beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/dior04.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/dior04.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/dior0402.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/dior0401.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/dior0404.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                    <img src="../img/dior0405.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>迪奧香氛世家
+                </h1>
+                <p>香氛和高訂時裝的優雅結合</p>
+                <p class="price">NT$5,200</p>
+                <p>勾勒出層次豐富的香氣輪廓</p>
+                <p>每款香水均選用頂級材料精心提煉而成。</p>
+
+
+                <div class="color-options">
+                    <label for="color">顏色</label>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: #CDCDCF;"data-size="01"></div>
+                        <div class="color-box" style="background-color: #E3969E;"data-size="02"></div>
+                        <div class="color-box" style="background-color: #DBE4D7;"data-size="03"></div>
+                        <div class="color-box" style="background-color: #D0BBCC;"data-size="04"></div>
+                        <div class="color-box" style="background-color: #F5E29E;"data-size="05"></div>
+                        <div class="color-box" style="background-color: #ECAE93;"data-size="06"></div>
+                    </div>
+                </div>
+                <div class="size-option">
+                    <label for="size">色號</label>
+                    <select id="size" name="size">
+                        <option value="01">NEW LOOK香氛</option>
+                        <option value="02">特拉法加香氛</option>
+                        <option value="03">幸運時刻香氛</option>
+                        <option value="04">蒙田大道香氛</option>
+                        <option value="05">鑲銀木香氛</option>
+                        <option value="06">暖木印記香氛</option>
+
+                    </select>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <BR>
+                <img src="../img/dior0406.jpeg" alt="Product Feature">
+                
+            
+                <p><B>New Look</B><Br>
+                    <br>是一款中性香氛，充滿對比、率直進取，<br>是大膽開創讓琥珀香調突破傳統的嗅覺驚喜。<br><br>
+
+                     
+                    NEW LOOK香氛有著獨一無二的清新氣韻，立即使人著迷。<br>
+                    馥郁撲鼻的醛香，調和神秘的乳香，尾韻收在琥珀的細膩轉折：<br>驚豔感官，宛如第二層肌膚的親密香氣。<br><br>
+                                        
+                </p>
+                <p><B>特拉法加香氛</B><Br>
+                    <br>2020全新上市的特拉法加香氛，是一款充滿活力與果香的高級訂製香氛，<br>
+                    清甜愉悅的香氣結構，宛若迪奧先生秀上的特拉法加紅，淘氣又令人驚豔。<br><br>
+                    香調:<br>
+花果香調— 前調是夏日的草莓、天鵝絨般的覆盆莓、與清新如陽光的柑橘香氣，綴以珍貴黑加侖原精。<br>
+尾韻則由紫羅蘭葉原精交融著廣藿香、白麝香的繾綣綿延木質氣息。<br><br>
+                </p>
+                <p><B>幸運時刻香氛</B><Br>
+                    <br>宛如香氣幸運符的幸運時刻香氛，譜寫迪奧先生深信鈴蘭能帶來好運的軼事。
+                    <br><br>
+                    香調:<br>
+                    清新花香調。<br>幸運時刻香氛香氣細緻，由馥郁的鈴蘭花香，及白色花朵香調交織而成。<br><br>
+                </p>
+                <p><B>蒙田大道香氛</B><Br>
+                    <br>蒙田大道香氛，將迪奧經典蒙田灰化作一抹中性香氣。<br>
+                    既復古又現代，將花香與木質完美融合，體現迪奧之家的法式香氛底蘊，和與時俱進的無畏精神。<br><br>
+
+                    DIOR香氛世家蒙田大道香氛，神秘的西普勒斯柑苔調，<br>
+                    是一款絕對中性的香氛，點亮個人強烈鮮明的形象，完美詮釋專屬於你的獨特性格。<br><br>
+                    
+                    蒙田大道香氛的香氣既復古又現代，將具有深厚歷史的西普勒斯柑苔調，重新演繹摩登風情。<Br>
+                        香味層次豐富，並非看似那樣的明顯。<br>
+                        有如灰色一樣，純粹的黑與白融合，極簡卻引人遐想，有著豐富的微妙之處。<br>
+                    
+                    蒙田大道是花香及木質調微妙結合而成，是一款能夠體現柑苔調輪廓的經典標誌。
+                </p>
+                <p><B>鑲銀木香氛</B><Br>
+                    <br>鑲銀木香氛是經典DIOR性感花香調代表<br>
+                    這款中性香氛述說著自己的故事，同時也邀請您一同創造專屬於您的故事。<br><br>
+                    香調:<br>
+性感花香調。<br>鑲銀木香氛揉合充滿陽剛氣息的鳶尾花，與柔美嬌媚的乳香芬芳<br>
+其香氣引人入勝，令人不禁想穿搭優雅柔和的造型。
+
+                </p>
+                <p><B>暖木印記香氛</B><Br>
+                    <br>僅僅提起 「暖木印記」，便足以展開一場震撼的香氣之旅，探索揉合各種強烈對比的辛香料香氣。
+                    <br><br>
+                    香調:<br>
+                    性感花香調。<br>
+                    暖木印記香氛淬鍊自世界各地的辛辣香料，濃郁而驚喜，讓蘭姆酒精華的溫暖氣息格外分明，帶出其清新香調。<br>
+                    是一趟辛香料旅程：鮮明活力的馬達加斯加黑胡椒濃香，揉合細緻優美的生薑精華、以及其他獨具一格的辛香料<br>
+                    例如月桂葉，賦予香氛一絲木質香調的魅力。<br>
+                </p>
+
+
+                
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>當天就收到貨 味道是我喜歡的</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>香水味道非常喜歡，包裝很完整版。</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>好幾年習慣的香味，本來都用大瓶裝，為好㩦帶購買小瓶。</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>包裝嚴實，商品數量正確無誤，香味舒服療癒，有需要會回購</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+                <p><b>迪奧香氛世家
+                </b></p>
+                <table>
+                    <tr>
+                        <th>品牌名稱</th>
+                        <td>Dior 迪奧</td>
+                    </tr>
+                    <tr>
+                        <th>香味</th>
+                        <td>玫瑰調花香調清新</td>
+                    </tr>
+    
+                    <tr>
+                        <th>品牌定位</th>
+                        <td>專櫃</td>
+                    </tr>
+                    <tr>
+                        <th>濃度</th>
+                        <td>香氛</td>
+                    </tr>
+                    <tr>
+                        <th>款式</th>
+                        <td>一般</td>
+                    </tr>
+                    <tr>
+                        <th>容量</th>
+                        <td>40ml  125ml</td>
+                    </tr>
+                    <tr>
+                        <th>用途</th>
+                        <td>身體芳香</td>
+                    </tr>
+                    
+                 
+    
+                </table>
+           
+                <p>
+
+                <b>注意事項：</b>
+
+                <li>使用後若有過敏請即刻停止使用並請教醫師。</li>
+                <li>請將商品放置陰涼處以避免變質。</li>
+                <li>請置於陰涼處，請勿直接陽光照射，以免變質。</li>
+                <li>因電腦螢幕設定及個人觀感之差異，本賣場之商品圖片僅供參考，以收到實際商品為準。</li>
+                <li>本產品屬於私人消耗性產品，已拆封或使用過、無法恢復原狀、商品外盒損壞等均恕無法辦理退換貨。</li></p>
+            
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

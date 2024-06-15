@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="iconfont.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/熱銷1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.2; 
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <section class="products">
+            <h2>熱銷TOP3</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product.html"><img src="../img/lancome5.webp" alt="Product 1"></a>
+                    <h3>HD SKIN 輕透亮采粉底液</h3>
+                    <p>NT$1,850</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product11.html"><img src="../img/ysl0400.webp" alt="Product 2"></a>
+                    <h3>奢華緞面釉惑唇膏</h3>
+                    <p>NT$1,580</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product12.html"><img src="../img/dior01.jpeg" alt="Product 1"></a>
+                    <h3>Miss Dior迪奧50ml</h3>
+                    <p>NT$3,850</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </div>
+    <script src="../jsp/featured-products.js"></script>
+</body>
+</html>

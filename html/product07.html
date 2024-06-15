@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/mac0401.webp" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/mac0401.webp" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/mac0402.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/mac0403.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/mac0404.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>星光液態眼影</h1>
+                <p>智能記憶配方 服貼有如第2層肌膚</p>
+                <p class="price">NT$1,080</p>
+                <p>質地輕盈,為眼皮增添璀璨明亮的色澤</p>
+                <p>雙種閃耀妝感 星光瓦數任你決定</p>
+
+
+                <div class="color-options">
+                    <label for="color">顏色</label>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: #E4D7E3;"data-size="01"></div>
+                        <div class="color-box" style="background-color: #CF8C90;"data-size="02"></div>
+                        <div class="color-box" style="background-color: #AA6852;"data-size="03"></div>
+                        <div class="color-box" style="background-color: #B16D40;"data-size="04"></div>
+                        <div class="color-box" style="background-color: #E2D3C5;"data-size="05"></div>
+                    </div>
+                </div>
+                <div class="size-option">
+                    <label for="size">色號</label>
+                    <select id="size" name="size">
+                        <option value="01">DIAMOND CRUMBLES藍色帶粉紅珍珠</option>
+                        <option value="02">LOVE YOURSELF金屬粉</option>
+                        <option value="03">RAYON RAYS 暖棕暖棕</option>
+                        <option value="04">BLINKING BRILLIANT橙色銅</option>
+                        <option value="05">NOT AFRAID TO SPARKLE 透明銀帶閃光</option>
+                    </select>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/mac0405.jpeg" alt="Product Feature"></div>
+                
+                
+                <p><b>星光液態眼影的閃耀機密<br></b><br>
+                    星光液態眼影不僅同時保留輕盈無感的質地<br>更採用了史無前例的超智能記憶配方，<br>一刷上眼皮就能立即記憶弧度，並迅速定色<br>長達8小時服貼不掉色，也不積線，有如第二層肌膚<br>經過眼科醫師測試，即使配戴隱形眼鏡使用，也不會造成眼部不適。<br><br>
+
+                    星光液態眼影全系列共10色<br>分為絲滑金屬與超閃耀星片2種妝效<br>絲滑金屬質地搭配大小適中的棉質刷頭一畫上便能感受平滑細膩的高顯色度，一筆有感<br>而超閃耀星片每色都精心調製不同顏色的偏光：<br>有如神秘黑洞的紫黑星光到夢幻獨角獸色系，在星光液態眼影中都可以找到。
+
+                </p>
+                </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>很細閃的亮片，希望好卸</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>眼影顏色很漂亮，很喜歡</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>顏色柔和，抹上後等一下乾了真的不會掉色</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>淡淡的珍珠光，很優雅，適合日常妝容</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+                <p><b>絲柔粉霧眼影</b></p>
+            <table>
+                <tr>
+                    <th>品牌名稱</th>
+                    <td>M.A.C</td>
+                </tr>
+                <tr>
+                    <th>品牌系列名稱</th>
+                    <td>玩色眼影系列</td>
+                </tr>
+
+                <tr>
+                    <th>品牌定位</th>
+                    <td>專櫃</td>
+                </tr>
+                <tr>
+                    <th>顏色</th>
+                    <td>粉色系   橙色系   棕色系  珠光色系 </td>
+                </tr>
+
+            </table>
+
+           
+                <p>
+
+                <b>注意事項：</b>
+
+                <li>使用完畢後請緊蓋蓋子。</li>
+                <li>請避免掉落或遭受重擊，以免造成內容物碎裂。</li>
+                <li>肌膚異常時勿使用，使用後若有不適請立即停止使用，並請教醫師。</li>
+                <li>存放在陰涼與孩童無法取得處，並遠離火源。</li>
+                <li>正確效期請以實際出貨實品標示為主。</li></p>
+            
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品管理後台</title>
+    <link rel="stylesheet" href="../css/back.css">
+
+</head>
+<body>
+    <div class="container">
+        <button id="addButton" class="add-button" onclick="addNewProduct()">新增商品</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>商品名稱</th>
+                    <th>價格</th>
+                    <th>庫存</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+                <tr>
+                    <td>10001</td>
+                    <td>零粉感光澤持妝粉底</td>
+                    <td>2350</td>
+                    <td>50</td>
+                    <td>
+                        <button class="edit-button" onclick="editProduct(1)">修改</button>
+                        <button class="delete-button" onclick="deleteProduct(1)">刪除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10002</td>
+                    <td>HD SKIN 無瑕雙用粉餅</td>
+                    <td>1950</td>
+                    <td>100</td>
+                    <td>
+                        <button class="edit-button" onclick="editProduct(2)">修改</button>
+                        <button class="delete-button" onclick="deleteProduct(2)">刪除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11001</td>
+                    <td>泥娃娃活性碳面膜</td>
+                    <td>1050</td>
+                    <td>30</td>
+                    <td>
+                        <button class="edit-button" onclick="editProduct(3)">修改</button>
+                        <button class="delete-button" onclick="deleteProduct(3)">刪除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11002</td>
+                    <td>一舉兩得潔面慕絲</td>
+                    <td>1050</td>
+                    <td>80</td>
+                    <td>
+                        <button class="edit-button" onclick="editProduct(4)">修改</button>
+                        <button class="delete-button" onclick="deleteProduct(4)">刪除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11003</td>
+                    <td>青春無敵靈芝光潤機能水</td>
+                    <td>1600</td>
+                    <td>20</td>
+                    <td>
+                        <button class="edit-button" onclick="editProduct(5)">修改</button>
+                        <button class="delete-button" onclick="deleteProduct(5)">刪除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="editForm" style="display: none;">
+            <h2>修改商品</h2>
+            <input type="hidden" id="editProductId">
+            <div class="input-field">
+                <label for="editProductName">商品名稱：</label>
+                <input type="text" id="editProductName" required>
+            </div>
+            <div class="input-field">
+                <label for="editProductPrice">價格：</label>
+                <input type="number" id="editProductPrice" required>
+            </div>
+            <div class="input-field">
+                <label for="editProductStock">庫存：</label>
+                <input type="number" id="editProductStock" required>
+            </div>
+            <button class="save-button" onclick="saveProduct()">保存</button>
+            <button onclick="cancelEdit()">取消</button>
+        </div>
+    </div>
+
+    <script src="../jsp/back.js"></script>
+</body>
+</html>

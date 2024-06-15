@@ -1,0 +1,114 @@
+{
+  "id": "4566239",
+  "name": "iconfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630092",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1279447",
+      "name": "收藏",
+      "font_class": "shoucang1",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "4896645",
+      "name": "收藏-取消收藏",
+      "font_class": "shoucang-quxiaoshoucang",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "1450554",
+      "name": "購買",
+      "font_class": "goumai_xpx_goumai_xpx",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "5057246",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9874480",
+      "name": "KHCFDC_返回",
+      "font_class": "fanhui",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "999138",
+      "name": "澳门外卖-地標",
+      "font_class": "aomenwaimaidibiao",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "9925446",
+      "name": "login",
+      "font_class": "login",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "30603587",
+      "name": "paixu_20",
+      "font_class": "paixu_20",
+      "unicode": "e7c8",
+      "unicode_decimal": 59336
+    },
+    {
+      "icon_id": "21333675",
+      "name": "信箱-线框",
+      "font_class": "xinxiang-xiankuang",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4937026",
+      "name": "instagram-fill",
+      "font_class": "instagram-fill",
+      "unicode": "e88f",
+      "unicode_decimal": 59535
+    },
+    {
+      "icon_id": "7239453",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "10087488",
+      "name": "購物車",
+      "font_class": "gouwuche",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11399529",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "15378543",
+      "name": "line",
+      "font_class": "line",
+      "unicode": "ebf5",
+      "unicode_decimal": 60405
+    }
+  ]
+}

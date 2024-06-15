@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3a297;
+    padding: 10px 20px;
+}
+
+.search-icon, .icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.iconfont {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 搜索內容容器 */
+.search-content {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    background-color: white;  /* 背景設為白色 */
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+}
+
+/* 激活時顯示 */
+.search-content.active {
+    background-color: white;
+
+    display: flex;
+}
+
+.input-container {
+    background-color: white;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    width: 80%;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    font-size: 20px;
+   background-color: white;
+}
+
+.input-container button {
+    width: 52px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.hot-list a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #424242;
+    padding: 6px 15px;
+    text-align: left;
+}
+
+.hot-list a:hover {
+    background-color: #e0e0e0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #3E3D39;
+}
+
+.logo {
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #d3a297;
+}
+
+nav {
+    background-color: #d3a297;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.banner {
+    position: relative;
+    text-align: left;
+    background-color: #d3a297;
+    color: white;
+    margin-top: 180px; /* 确保与 header 高度一致 */
+}
+
+
+/* 幻燈片容器 */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* 默認隱藏圖片 */
+.mySlides {
+    display: none;
+}
+
+/* 淡入淡出動畫 */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* 導航按鈕 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* 懸停時增加黑色背景並稍微透明 */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 點指示器 */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+.products {
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 220px;
+    height: auto;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #333;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.favorite-button, .cart-button {
+    background-color: #d3a297;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.favorite-button:hover, .cart-button:hover {
+    background-color: #b38672;
+}
+
+footer {
+    background-color: #d3a297;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.featured-products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 188px;
+    object-fit: cover;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #B65D3C;
+}
+
+html {
+    scroll-padding-top: 180px; 
+}
+
+.index-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.index-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-results {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-results.active {
+    display: block;
+}
+h2 {
+    scroll-margin-top: 50px; /* 根據你的導航條高度進行調整 */
+}
+/* 收藏按鈕樣式 */
+.favorite-button.favorited {
+    background-color: #ff6b6b;
+    color: white;
+}

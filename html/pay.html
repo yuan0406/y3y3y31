@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link href="iconfont.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pay.css">
+ 
+</head>
+<body>
+    
+    <header>
+        <div class="search">
+            <button class="iconfont" onclick="toggleSearchResults()">&#xe630;</button><!-- 搜尋 -->
+        </div>
+        <div class="content" id="searchResults">
+            <div class="input-container">
+                <input type="text" placeholder="我想要搜尋...">
+                <button class="iconfont">&#xe630;</button>
+            </div>
+            <div class="hot-list">
+                <a href="#">全部商品</a>
+                <a href="#">雅詩蘭黛</a>
+                <a href="#">YSL</a>
+                <a href="#">口紅</a>
+                <a href="#">小棕瓶</a>
+            </div>
+        </div>
+
+        <div class="righticon">
+            <a class="iconfont" href="#">&#xe66c;</a><!-- 據點 -->
+            <a class="iconfont" href="login.html">&#xe62f;</a><!-- 登入 -->
+            <a class="iconfont" href="car.html">&#xe631;</a> <!--購物車-->
+            <a class="iconfont closebtn" href="javascript:void(0)" onclick="openNav()">&#xe7c8;</a><!--導航-->
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">唇彩</a>
+            <a href="#">底妝</a>
+            <a href="#">眼部</a>
+            <a href="#">保養</a>
+        </div>
+    </header>
+    <div class="no1" id="no1">
+        <p style="font-size: 30px;">合計: 3500</p>
+        <p class="iconfont">購物車&#xe65e;</p>
+    </div>
+    <div class="hidden-table-container" id="hiddenTableContainer">
+        <table class="hidden-table">
+            <thead>
+                <tr>
+                    <th>產品</th>
+                    <th>規格</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>總計</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="item">
+                        <img src="../img/粉氣墊.jpeg" style="width: 120px;">
+                        <div>YSL粉氣墊 持久遮瑕輕薄細膩保濕乾皮摯愛</div>
+                    </td>
+                    <td>B10 | 白皙膚色</td>
+                    <td>$3500</td>
+                    <td>1</td>
+                    <td>$3500</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="total-price">總計: $3500</p>
+    </div>
+    <div class="details-container">
+        <div class="no2-container">
+            <div class="no2">
+                <p>用戶資料</p>
+                <form id="customer-form">
+                    <div class="customer-details">
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">信箱:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">電話:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="no4">
+                <p>顧客備註</p>
+                <div class="form-group">
+                    <label for="customer-remarks">備註:</label>
+                    <textarea id="customer-remarks" name="customer-remarks" rows="4" cols="50" placeholder="在此輸入您的備註"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="no3-container">
+            <div class="no3">
+                <p>送貨資料</p>
+                <div class="form-group">
+                    <label for="shipping-method">寄送方式</label>
+                    <select id="shipping-method">
+                        <option value="">請選擇寄送方式</option>
+                        <option value="home">宅配</option>
+                        <option value="pickup">商店取貨</option>
+                        <option value="convenience-store">超商取貨</option>
+                    </select>
+                </div>
+                <div id="address-info" style="display: none;">
+                    <h4>地址資訊:</h4>
+                    <p>台北市大安區忠孝東路四段 123 號 5 樓</p>
+                    <button class="add-edit-button">修改地址</button>
+                </div>
+                <div id="store-info" style="display: none;">
+                    <h4>超商取貨資訊:</h4>
+                    <p id="store-name">超商名稱: 7-11</p>
+                    <p id="store-address">超商門市: 原大門市</p>
+                    <button class="edit-button">修改取貨超商</button>
+                </div>
+            </div>
+            
+        </div>
+        <button id="confirmOrderMainBtn">確認下單</button>
+    </div>
+
+    <!-- 地址隱藏視窗 -->
+    <div id="addressModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="inline-group">
+                <div class="form-group">
+                    <label for="city">城市</label>
+                    <select id="city" onchange="updateDistricts()">
+                        <option value="">請選擇城市</option>
+                        <option value="台北市">台北市</option>
+                        <option value="新北市">新北市</option>
+                        <option value="桃園市">桃園市</option>
+                        <option value="台中市">台中市</option>
+                        <option value="台南市">台南市</option>
+                        <option value="新竹縣">新竹縣</option>
+                        <option value="高雄市">高雄市</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="district">地區</label>
+                    <select id="district">
+                        <option value="">請先選擇城市</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">地址</label>
+                <input type="text" id="address" name="address" placeholder="請輸入詳細地址">
+            </div>
+            <button id="address-confirm-btn">確定</button>
+        </div>
+    </div>
+
+    <!-- 超商隱藏視窗 -->
+    <div id="storeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="inline-group">
+                <div class="form-group">
+                    <label for="store">商店名稱</label>
+                    <select id="store">
+                        <option value="">請選擇超商</option>
+                        <option value="7-11">7-11</option>
+                        <option value="FamilyMart">全家</option>
+                        <option value="OK Mart">OK</option>
+                        <option value="Hi-Life">萊爾富</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="shop">門市</label>
+                <input type="text" id="shop" name="shop">
+            </div>
+            <button class="confirm-button" id="confirmStore">確認</button>
+        </div>
+    </div>
+    
+    <!-- 第一個模態窗口 (二次確認) -->
+    <div id="secondConfirmModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>請確認您的訂單</h2>
+            <p>您是否確定要提交此訂單？</p>
+            <div class="btn-container"></div>
+                <button id="confirmOrderBtn" class="btn">確認</button>
+                <button id="cancelOrderBtn" class="btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二個模態窗口 (成功信息) -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>訂單確認</h2>
+            <p>您的訂單已成功下訂。</p>
+            <button class="btn" id="thankYouBtn">返回主畫面</button>
+        </div>
+    </div>
+    <script src="../jsp/pay.js"></script>
+
+</body>
+</html>

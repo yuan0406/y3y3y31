@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/lancome002.png" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/lancome002.png" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/lancome003.png" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/lancome006.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/lancome004.png" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>零粉感超持久彈力水粉霜</h1>
+                <p class="price">NT$2,150</p>
+                <p>全新配方提升妝效及持久力，提供全天候保濕效果。</p>
+                <p>全台單筆滿$2,500 免運費及免收貨到付款手續費</p>
+
+                <div class="color-options">
+                    <label for="color">顏色</label>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: #F6CBB3;"data-size="01"></div>
+                        <div class="color-box" style="background-color: #F0C8AB;"data-size="02"></div>
+                        <div class="color-box" style="background-color: #F3D8BA;"data-size="03"></div>
+                        <div class="color-box" style="background-color: #ECD1C6;"data-size="04"></div>
+                    </div>
+                </div>
+                <div class="size-option">
+                    <label for="size">尺寸</label>
+                    <select id="size" name="size">
+                        <option value="01">PO-01</option>
+                        <option value="02">BO-01</option>
+                        <option value="03">BO-02</option>
+                        <option value="04">P-00</option>
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <div class="content1">
+                
+            <p><li>玫瑰粉撲打造無瑕細緻底妝</li>
+                <li>封存150朵珍稀大馬士革玫瑰</li>
+                <li>注3大頂級精華油</li><br>
+                <b>氣墊粉底商品Q&A<br></b><br>
+                氣墊粉底與粉底液及粉餅的差異<br>
+                → 氣墊：將粉底液濃縮在彈力網底下，搭配專用粉撲輕拍彈壓上妝，粉餅式包裝，便攜。<br>
+                → 粉底液：多為液態瓶裝，持妝力高、延展性強，妝效選擇較多樣，通常遮瑕力較佳。<br>
+                → 粉餅：為壓縮粉狀類型，妝效多為霧面柔焦感。<br>
+                擔心一次按壓粉底量太多，氣墊粉底正確使用方式說明<br>
+                → 新購入的氣墊粉底含量較多，控制按壓力道(輕壓)，少量多次上妝。<br>
+                氣墊粉底適合哪些族群使用? <br>
+→                 喜歡方便快速、底妝新手。<br>
+                </p>
+                </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>一直是蘭蔻的愛用者，已經回購NN次了</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>很保濕，不錯，但遮瑕度不是很高的那種</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>出貨速度快 商品品質佳</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>搭配折價券很划算</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+            <table>
+                <tr>
+                    <th>品牌名稱</th>
+                    <td>LANCOME 蘭蔻</td>
+                </tr>
+                <tr>
+                    <th>品牌定位</th>
+                    <td>專櫃</td>
+                </tr>
+                <tr>
+                    <th>功效</th>
+                    <td>控油</td>
+                </tr>
+                <tr>
+                    <th>成份</th>
+                    <td>SFP15以下</td>
+                </tr>
+                <tr>
+                    <th>色調</th>
+                    <td>一般膚色 白皙膚色 健康膚色</td>
+                </tr>
+
+            </table>
+            <p>【LANCOME 蘭蔻】絕對完美玫瑰氣墊粉餅</p>
+            <ul class="note">
+                <li>◆注意事項：限外用，使用前請詳閱包裝盒外(本體外)之說明，如有任何異常現象請暫停使用，並立即就醫診治。</li>
+                <li>◆退換貨事項：除商品本身有瑕疵可辦理退貨，商品一經使用或損毀即不可退貨，退貨必須保留紙箱及商品。</li>
+                <li>◆商品圖片僅供實物參考。內容物組成以實物及商品說明為主。</li>
+            </ul>
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y<sup>3</sup> Beauty</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-icon">
+                <a href="#" class="iconfont" onclick="toggleSearchResults()">&#xe630;</a><!-- 搜尋 -->
+            </div>
+            <div class="icons">
+                <a href="#" class="iconfont">&#xe66c;</a><!-- 據點 -->
+                <a href="login.html" class="iconfont">&#xe62f;</a><!-- 登入 -->
+                <a href="car.html" class="iconfont">&#xe631;</a><!-- &#xe61c; -->
+                <a href="javascript:void(0)" class="iconfont" onclick="openNav()">&#xe7c8;</a><!-- 導航 -->
+            </div>
+        </div>
+        <div class="search-content" id="searchResults">
+            <div class="input-container">
+                <input type="text" placeholder="我想要搜尋...">
+                <button class="iconfont">&#xe630;</button>
+            </div>
+            <div class="hot-list">
+                <a href="#home">全部商品</a>
+                <a href="#eye">MAC</a>
+                <a href="#lip">YSL</a>
+                <a href="#Perfume">香水</a>
+                <a href="product16.html">泥娃娃活性碳面膜</a>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="lip.html">唇彩</a>
+            <a href="face.html">底妝</a>
+            <a href="eye.html">眼妝</a>
+            <a href="maintenance.html">護膚</a>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup> beauty</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#face">臉部彩妝</a></li>
+                <li><a href="#eye">眼部彩妝</a></li>
+                <li><a href="#lip">唇部彩妝</a></li>
+                <li><a href="#Perfume">香水</a></li>
+                <li><a href="#Maintenance">護膚</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="banner" id="home">
+            <div class="slideshow-container">
+                <div class="mySlides fade" id="home">
+                    <img src="../img/3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../img/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../img/7.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section></main>
+
+        <section class="featured-products">
+            <div class="product-row">
+                <div class="product-item">
+                    <a href="featured-products01.html"><img src="../img/新品上市.webp" alt="新品"></a>
+                    <p>新品<br>上市</p>
+                </div>
+                <div class="product-item">
+                    <a href="featured-products02.html"><img src="../img/組合優惠.jpeg" alt="優惠"></a>
+                    <p>優惠<br>組合</p>
+                </div>
+                <div class="product-item">
+                    <a href="featured-products03.html"><img src="../img/熱銷.jpeg" alt="熱銷TOP3"></a>
+                    <p>熱銷<br>TOP3</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="index-image"><img src="../img/index01.jpeg" ></div>
+        <section class="products">
+            <h2 id="face">臉部彩妝</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product00.html"><img src="../img/lancome5.webp" alt="Product 1"></a>
+                    <h3>HD SKIN 輕透亮采粉底液</h3>
+                    <p>NT$1,850</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product02.html"><img src="../img/lancome0200.webp" alt="Product 2"></a>
+                    <h3>零粉感光澤持妝粉底</h3>
+                    <p>NT$2,350</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product01.html"><img src="../img/lancome001.png" alt="Product 2"></a>
+                    <h3>HD SKIN 無瑕雙用粉餅</h3>
+                    <p>NT$1,950</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product03.html"><img src="../img/lancome0305.png" alt="Product 2"></a>
+                    <h3>零粉感超持久蜜粉_透明</h3>
+                    <p>NT$1,800</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>    
+        <div class="index-image"><img src="../img/inedex03.png">   </div>
+         <section class="products">
+            <h2 id="eye">眼部彩妝</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product04.html"><img src="../img/mac0100.webp" alt="Product 1"></a>
+                    <h3>玩色派對六色眼影盤-玫瑰森林</h3>
+                    <p>NT$1,720</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product05.html"><img src="../img/mac0200.png" alt="Product 2"></a>
+                    <h3>玩色派對十二色眼影-裸茶大地</h3>
+                    <p>NT$2,400</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product06.html"><img src="../img/mac0300.png" alt="Product 2"></a>
+                    <h3>絲柔粉霧眼影</h3>
+                    <p>NT$900</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product07.html"><img src="../img/mac0400.webp" alt="Product 2"></a>
+                    <h3>星光液態眼影</h3>
+                    <p>NT$1,080</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="index-image"><img src="../img/index02.png" ></div>
+        <section class="products">
+            <h2 id="lip">唇部彩妝</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product08.html"><img src="../img/ysl0100.webp" alt="Product 1"></a>
+                    <h3>情挑誘光水唇膏</h3>
+                    <p>NT$1,580</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product09.html"><img src="../img/ysl0200.jpeg" alt="Product 2"></a>
+                    <h3>奢華緞面漆光唇釉</h3>
+                    <p>NT$1,580</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product10.html"><img src="../img/YSL0300.webp" alt="Product 2"></a>
+                    <h3>奢華緞面絲絨唇膏</h3>
+                    <p>NT$1,580</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product11.html"><img src="../img/ysl0400.webp" alt="Product 2"></a>
+                    <h3>奢華緞面釉惑唇膏
+                    </h3>
+                    <p>NT$1,580</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="index-image"><img src="../img/index04.webp" ></div>
+        <section class="products">
+            <h2 id="Perfume">香水</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product12.html"><img src="../img/dior01.jpeg" alt="Product 1"></a>
+                    <h3>Miss Dior迪奧50ml</h3>
+                    <p>NT$3,850</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product13.html"><img src="../img/dior04.jpeg" alt="Product 2"></a>
+                    <h3>迪奧香氛世家 125ml</h3>
+                    <p>NT$5,200</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product14.html"><img src="../img/dior0200.webp" alt="Product 2"></a>
+                    <h3>曠野之心60ml</h3>
+                    <p>NT$3,300</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product15.html"><img src="../img/dior03.jpeg" alt="Product 2"></a>
+                    <h3>J'ADORE 50ml
+                    </h3>
+                    <p>NT$4,750</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="index-image"><img src="../img/index05.jpeg"  ></div>
+        <section class="products">
+            <h2  id="Maintenance">護膚</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="product16.html"><img src="../img/品木宣言0100.webp" alt="Product 1"></a>
+                    <h3>泥娃娃活性碳面膜</h3>
+                    <p>NT$1,050</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product17.html"><img src="../img/品木宣言0200.jpeg" alt="Product 2"></a>
+                    <h3>一舉兩得潔面慕絲</h3>
+                    <p>NT$1,050</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product18.html"><img src="../img/品木宣言0300.webp" alt="Product 2"></a>
+                    <h3>青春無敵靈芝光潤機能水 </h3>
+                    <p>NT$1,600</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product19.html"><img src="../img/品木宣言0400.webp" alt="Product 2"></a>
+                    <h3>青春無敵靈芝3重速效修護精萃
+                    </h3>
+                    <p>NT$2,500</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="product20.html"><img src="../img/品木宣言0500.webp" alt="Product 1"></a>
+                    <h3>青春無敵靈芝光潤機能乳液</h3>
+                    <p>NT$1,850</p>
+                    <div class="product-buttons">
+                        <button class="favorite-button iconfont">&#xe663;</button>
+                        <button class="cart-button iconfont">&#xe61c;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup> Beauty</p>
+    </footer>
+    <script src="../jsp/scripts.js"></script>
+</body>
+</html>

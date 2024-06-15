@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y<sup>3</sup> beauty</title>
+    <link rel="stylesheet" href="Revise.css">
+</head>
+<body>
+    <div class="registration-form">
+        <img src="" alt=" Logo" class="logo">
+        <h1>編輯會員資料</h1>
+        <form>
+            <div class="section">
+                <h2>會員基本資料</h2>
+                <div class="form-group">
+                    <label for="member-id">會員編號：</label>
+                    <span id="member-id">001</span>
+                </div>
+                <div class="form-group">
+                    <label for="name">中文姓名：</label>
+                    <input type="text" id="name" name="name" value="王小明" required>
+                </div>
+                <div class="form-group">
+                    <label for="id-number">身份證字號：</label>
+                    <input type="text" id="id-number" name="id-number" value="A123456789" required>
+                </div>
+            </div>
+            <div class="section">
+                <h2>聯絡資訊</h2>
+                <div class="form-group">
+                    <label for="region">國別及區碼：</label>
+                    <select id="region" name="region">
+                        <option value="台灣">台灣</option>
+                        <option value="美國">美國</option>
+                        <option value="日本">日本</option>
+                        <option value="韓國">韓國</option>
+                        <option value="中國">中國</option>
+                        <option value="西班牙">西班牙</option>
+                        <option value="義大利">義大利</option>
+                        <option value="澳洲">澳洲</option>
+                        <!-- Other regions if needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">完整聯絡地址：</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+            <div class="section highlighted">
+                <h2>行動電話</h2>
+                <div class="form-group">
+                    <label for="phone">行動電話：</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <span class="checkmark" id="phone-checkmark">✔️</span>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="primary-phone" name="primary" checked>
+                    <label for="primary-phone">設為首要</label>
+                </div>
+            </div>
+            <div class="section highlighted">
+                <h2>電子信箱</h2>
+                <div class="form-group">
+                    <label for="email">電子信箱：</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="checkmark" id="email-checkmark">✔️</span>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="primary-email" name="primary" checked>
+                    <label for="primary-email">設為首要</label>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit">儲存</button>
+                <button type="reset">取消</button>
+            </div>
+        </form>
+    </div>
+    <script src="Revise.js"></script>
+</body>
+</html>

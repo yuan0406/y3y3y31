@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../css/car.css">
+    
+</head>
+<body>
+   
+    <div class="box">
+        <div class="top">
+            <img src="../img/logo.jpg" width="80px">
+            <button onclick="window.close()">x</button>
+        </div>
+    </div>
+    <table class="intro">
+        <tr>
+            <td class="sp">商品</td>
+            <td class="gg">規格</td>
+            <td >單價</td>
+            <td >數量</td>
+            <td >總計</td>
+            <td >操作</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="shop">
+            <div class="header">
+                <input type="checkbox" class="shop_checkbox">
+                <span class="shop_name">YSL</span>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div><input class="item_checkbox" type="checkbox" name=""></div>
+                    <div>
+                        <span class="item_img"><img src="../img/粉氣墊.jpeg" class="item_img"></span>
+                    </div>
+                    <div class="item_name">
+                        <div>YSL粉氣墊 持久遮瑕輕薄細膩保濕乾皮摯愛</div>
+                    </div>
+                    <div class="sku">規格:B10 | 白皙膚色</div>
+                    <div class="price">$3500</div>
+                    <div class="num_control">
+                        <a href="javascript:;" class="reduce disabled">–</a>
+                        <input type="text" class="buy_num" value="1">
+                        <a href="javascript:;" class="add">+</a>
+                    </div>
+                    <div class="total">
+                        <span>$3500</span>
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="del">刪除</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="shop">
+            <div class="header">
+                <input type="checkbox" class="shop_checkbox">
+                <span class="shop_name">ESTEE LAUDER雅詩蘭黛</span>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div><input class="item_checkbox" type="checkbox" name=""></div>
+                    <div>
+                        <span class="item_img"><img src="../img/dw粉底液.jpg" class="item_img"></span>
+                    </div>
+                    <div class="item_name">
+                        <div>雅詩蘭黛DW持妝粉底液油皮親媽 持久遮瑕控油服帖</div>
+                    </div>
+                    <div class="sku">規格:1w1 象牙白</div>
+                    <div class="price">$2250</div>
+                    <div class="num_control">
+                        <a href="javascript:;" class="reduce disabled">–</a>
+                        <input type="text" class="buy_num" value="1">
+                        <a href="javascript:;" class="add">+</a>
+                    </div>
+                    <div class="total">
+                        <span>$2250</span>
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="del">刪除</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><input class="item_checkbox" type="checkbox" name=""></div>
+                    <div>
+                        <span class="item_img"><img src="../img/小棕瓶.jpg" class="item_img"></span>
+                    </div>
+                    <div class="item_name">
+                        <div>雅詩蘭黛第七代小棕瓶精華面部精華淡紋修護緊致抗皺</div>
+                    </div>
+                    <div class="sku">規格:30ml</div>
+                    <div class="price">$3050</div>
+                    <div class="num_control">
+                        <a href="javascript:;" class="reduce disabled">–</a>
+                        <input type="text" class="buy_num" value="1">
+                        <a href="javascript:;" class="add">+</a>
+                    </div>
+                    <div class="total">
+                        <span>$3050</span>
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="del">刪除</a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="checkout">
+        <div><input type="checkbox" class="all"><span>全選</span></div>
+        <div>總金額:<span class="sumTotal" >0.00</span></div>
+        <a href="pay.html"class="checked_button">結帳</a>
+    </div>
+
+    <script src="../jsp/car.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-section">
+            <h2>註冊新帳戶</h2>
+            <form action="index.html" method="post">
+                <div class="input-group">
+                    <label for="register-username">用戶名</label>
+                    <input type="text" id="register-username" name="username" placeholder="用戶名" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-email">電子郵件地址</label>
+                    <input type="email" id="register-email" name="email" placeholder="電子郵件地址" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-password">密碼</label>
+                    <input type="password" id="register-password" name="password" placeholder="密碼" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-phone">電話</label>
+                    <input type="tel" id="register-phone" name="phone" placeholder="電話" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-dob">出生年月日</label>
+                    <input type="date" id="register-dob-picker" name="dob_picker">
+                     </div>
+
+                <div class="input-group">
+                    <label for="register-gender">性別</label>
+                    <select id="register-gender" name="gender" required>
+                        <option value="">選擇性別</option>
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="register-button">註冊</button>
+            </form>
+            <p>已經有帳戶了？<a href="login.html">點擊這裡登入</a></p>
+        </div>
+    </div>
+    <script>
+        const datePicker = document.getElementById('register-dob-picker');
+        const textInput = document.getElementById('register-dob');
+
+        datePicker.addEventListener('change', function() {
+            textInput.value = this.value;
+        });
+
+        textInput.addEventListener('input', function() {
+            datePicker.value = this.value;
+        });
+    </script>
+</body>
+</html>

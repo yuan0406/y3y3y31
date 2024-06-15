@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+    
+    .registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    box-sizing: border-box;
+    }
+    
+    .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    }
+    
+    h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    
+    .section {
+    margin-bottom: 20px;
+    }
+    
+    h2 {
+    font-size: 20px;
+    color: #d3b1aa;
+    border-bottom: 2px solid #d3b1aa;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    }
+    
+    .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    }
+    
+    label {
+    width: 150px;
+    margin-right: 10px;
+    color: #333;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    
+    input[type="radio"] {
+    margin-right: 5px;
+    }
+    
+    .highlighted {
+    background-color: #f2f2f2da;
+    padding: 10px;
+    border: 1px solid #d3a297;
+    border-radius: 4px;
+    }
+    
+    .checkmark {
+    color: #d3a297;
+    margin-left: 10px;
+    display: none; /* Hide checkmarks by default */
+    }
+    
+    .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+    button {
+    background-color: #d3b1aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    }
+    
+    button[type="reset"] {
+    background-color: #ccc;
+    }
+    
+    button
+    {
+    opacity: 0.9;
+    }

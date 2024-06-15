@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/nars妝前1.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/nars妝前1.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                    <img src="../img/nars妝前2.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                    <img src="../img/nars妝前3.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/nars妝前4.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>極霧柔光持妝露</h1>
+                <p class="price">NT$1,500</p>
+                <li><p>史上第一款專為極霧底妝打造</p></li>
+                <li><p>全新概念型隱形水感持妝露</p></li>
+               <li><p>保濕控油完美雙平衡
+            </p></li>
+
+
+                <div class="size-option">
+                    <label for="size">數量</label>
+                    <select id="size" name="size">
+                        <option value="01">1</option>
+                        <option value="01">2</option>
+                        <option value="01">3</option>
+                        <option value="01">4</option>
+                        <option value="01">5</option>
+                        <option value="01">6</option>
+                        <option value="01">7</option>
+                        <option value="01">8</option>
+                        <option value="01">9</option>
+                        <option value="01">10</option>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/nars妝前5.jpeg" alt="Product Feature"></div>
+                
+            <p>
+                首創0.01極輕盈露狀質地 極輕水感融入肌膚<br>
+                0.01秒化成柔焦隱形透光保水膜<br>
+                隱形補水 隱形毛孔 隱形油光 隱形持妝<br>
+                追求極霧態度 從一而終 絕不妥協</p><br><br>
+                <p>
+
+
+                <b color="red">植萃保養成分【抗氧雙平衡保濕精萃】</b><br><br>
+
+0.01露狀質地<br>
+一抹極輕水感融入肌膚<br>
+0.01超薄的隱形光透保水膜<br>
+保濕控油完美雙平衡 一次完成<br><br>
+<b color="red">補光獨特添加【極緻柔焦礦物粉末】</b><br><br>
+
+微小球型粉末 均勻擴散光線<br>
+瞬間隱形毛孔及平滑細紋<br>
+柔焦美肌 絕不卡粉<br>
+提升底妝延展性更高 持久更服貼<br><br>
+<b color="red">全新首創研發【氣候水感平衡科技成分】</b><br><br>
+
+獨家雙向作用系統 環境自動偵測<br>
+乾燥環境下立即鎖牢底妝水分<br>
+潮濕環境下吸取外在水分加強保濕<br>
+維持完美保水比例 24H超持妝<br>
+            
+                </p>
+                </div>
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>質地很好推開，妝前打底讓皮膚都亮了起來</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>nars的妝前乳使用感佳不會起屑</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>作為妝前保濕十分優秀，已經回購第二條！</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>NARS是我拼命爬文後冒險購買的底妝產品，沒想到抹在臉上一點都不熏眼</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+            <table>
+                <tr>
+                    <th>品牌名稱</th>
+                    <td>NARS</td>
+                </tr>
+                <tr>
+                    <th>品牌定位</th>
+                    <td>專櫃</td>
+                </tr>
+                <tr>
+                    <th>功效</th>
+                    <td>亮白</td>
+                </tr>
+                <tr>
+                    <th>成份</th>
+                    <td>SFP15以下</td>
+                </tr>
+                <tr>
+                    <th>色調</th>
+                    <td>一般膚色</td>
+                </tr>
+                <tr>
+                    <th>商品規格</th>
+                    <td>30ml</td>
+                </tr>
+
+            </table>
+            <p>極霧柔光持妝露</p>
+            <ul class="note">
+                <li>◆注意事項：限外用，使用前請詳閱包裝盒外(本體外)之說明，如有任何異常現象請暫停使用，並立即就醫診治。</li>
+                <li>◆退換貨事項：除商品本身有瑕疵可辦理退貨，商品一經使用或損毀即不可退貨，退貨必須保留紙箱及商品。</li>
+                <li>◆商品圖片僅供實物參考。內容物組成以實物及商品說明為主。</li>
+            </ul>
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>

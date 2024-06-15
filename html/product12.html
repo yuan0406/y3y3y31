@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="iconfont.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>免費配送服務</span>
+        </div>
+        <div class="logo">
+            <h1>Y<sup>3</sup>   beauty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="main-image">
+                    <img src="../img/dior0101.jpeg" alt="Product Image">
+                </div>
+                <div class="thumbnail">
+                    <img src="../img/dior0101.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome5.jpeg')">
+                
+                     <img src="../img/dior0102.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                     <img src="../img/dior0103.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome1.webp')">
+                     <img src="../img/dior0104.jpeg" alt="Thumbnail" onclick="changeImage('image/lancome3.webp')">
+                    <img src="../img/dior0105.png" alt="Thumbnail" onclick="changeImage('image/lancome4.webp')">
+                 
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Miss Dior迪奧50ml
+                </h1>
+                <p>約會必備</p>
+                <p class="price">NT$3,850</p>
+                <p>清新花香調</p>
+                <p>細緻高雅</p>
+
+
+                <div class="color-options">
+                    <label for="color">顏色</label>
+                    <div class="color-boxes">
+                        <div class="color-box" style="background-color: #E8B9D2;"data-size="01"></div>
+                        <div class="color-box" style="background-color: #D15A6F;"data-size="02"></div>
+                        <div class="color-box" style="background-color: #F3ACB0;"data-size="03"></div>
+                        <div class="color-box" style="background-color: #DACA6D;"data-size="04"></div>
+                        <div class="color-box" style="background-color: #F3C6D1;"data-size="05"></div>
+                    </div>
+                </div>
+                <div class="size-option">
+                    <label for="size">色號</label>
+                    <select id="size" name="size">
+                        <option value="01">MISS DIOR花漾迪奧淡香水</option>
+                        <option value="02">MISS DIOR香精</option>
+                        <option value="03">MISS DIOR香氛</option>
+                        <option value="04">MISS DIOR經典版淡香水</option>
+                        <option value="05">MISS DIOR親吻香膏-花漾迪奧淡香水</option>
+                    </select>
+                        
+                    </select>
+                </div>
+                <div class="product-buttons">
+                    <button class="cart-button iconfont">&#xe61c;</button>
+                    <button class="favorite-button iconfont">&#xe663;</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_TW"><img src="../img/Fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../img/13.jpg" alt="客服"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showContent('content1')" class="active">商品特色</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content2')">商品評價</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content3')">商品規格</a></li>
+                <li><a href="javascript:void(0);" onclick="showContent('content4')">退/換貨需知</a></li>
+            </ul>
+        </nav>
+        <section class="content active" id="content1">           
+            <h1>商品特色</h1>
+            <div class="content1">
+                <img src="../img/dior0106.jpeg" alt="Product Feature">
+                
+
+                <p><B>MISS DIOR花漾迪奧淡香水</B><Br>
+                    <br>花漾迪奧淡香水是一款傳遞愉悅享受的香氛作品，是熱愛生命的縮影。<br>如同一束洋溢自然氛圍的花束，繽紛活力而溫柔甜美。
+
+                    <br><br>
+  
+                    以充滿對比的香調開場，細緻柔潤的甜豆果香開，點綴微苦酸甜的佛手柑。<bR>
+                    在大馬士革玫瑰香氣引領下，兼具優雅氣質與熱情活力<br>
+                    最後以輕柔的麝香氣息包覆，平衡了花香的性感一面。
+
+                </p>
+                <p><B>迪奧MISS DIOR香精</B><Br>
+                    <br>全新Miss Dior香精的香氣印象剛柔並濟，優雅並勇敢，流露著溫柔特質與青春活力。<br>
+                    迪奧香水創意總監Francis Kurkdjian，重返Miss Dior香氛的嗅覺靈感泉源，賦予全新Miss Dior香精摩登現代的層面。<br><br>
+
+                    Miss Dior的經典柑苔調，透過Francis Kurkdjian巧手展現新意：<br>
+                    揉合了花香、果香，以及溫潤的琥珀木質香氣。<br>
+                    為了向1947年問世、品牌第一款Miss Dior香氛中的茉莉致敬，調香師尋尋覓覓，<br>
+                    才為這款Miss Dior找到，透過獨家萃取工藝，帶來罕見果香餘韻的茉莉原精。<br>
+                    這款花香與果香兼具的、萬中選一的「星辰茉莉」，與木質香調恰到好處地融合<br>
+                    在閃耀的柑橘香氣襯托下，更顯璀璨耀眼。<br><br>
+                </p>
+
+                <p><B>MISS DIOR香氛</B><Br>
+                    Miss Dior香氛經典再現<br><br>
+                    全新Miss Dior香氛猶如一束優雅且絢麗的花束，繫著無數的花朵和鮮明色彩，散發著千絲萬縷的香氣，呼應著奔放灑脫的特質。<bR>
+                        帶有蜜糖與胡椒香氣的格拉斯玫瑰，如絲絨般滑順的核心香調。<br>
+                        鈴蘭的清新氣息，交織著帶有杏桃香氣的牡丹，以及鳶尾花的香粉質感綴點於其中，最後，以柔和的木質底韻輕輕包裹。
+
+                        </p>
+                <p><B>MISS DIOR經典版淡香水</B><Br><br>
+                    迪奧先生說：<br>
+                    「我創造這款香水，以細緻的女性魅力包裹每位女人，就好像我的設計是一瓶接一瓶逐一湧現的。」<br>
+                    在 1947 年創設新風貌，公司的第一瓶香水，<br>
+                    經典的綠色花香蘚苔調結合白松香與茉莉，以永恆的優雅與細緻，具體呈現了一位偉大設計師的獨特個性。
+                        </p>
+                        <p><B>MISS DIOR親吻香膏-花漾迪奧淡香水</B><Br><br>
+                            Miss Dior親吻香膏全新登場，無酒精成分<bR>
+                                隨身香設計，引領你時刻沉浸於Miss Dior花漾迪奧淡香水的細緻香氣中。<br><br>
+
+Miss Dior親吻香膏，迷你香膏，功效無限。富含玫瑰蠟，細緻柔滑的質地，輕盈不油膩，完美滋潤肌膚。<br>
+將香膏輕擦於脈搏點 – 頸部、肩部、手腕，時刻散發花漾迪奧淡香水的細緻香氣。<br>
+可單獨或是搭配香水使用。
+
+                                </p>
+
+
+  
+        </section>
+        <section class="content" id="content2">
+            <h1>商品評價</h1>
+            <div class="content1">
+            <div class="review-section01">
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-value" id="average-rating">4.9</span>
+                        <span class="stars" id="average-stars">★★★★★</span>
+                    </div>
+                    <div class="rating-details">
+                        <div class="rating-detail">
+                            <span>商品品質</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="quality-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="quality-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>商品符合</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="conformity-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="conformity-rating-score">4.9</span>
+                        </div>
+                        <div class="rating-detail">
+                            <span>出貨速度</span>
+                            <div class="rating-bar">
+                                <div class="rating-fill" id="speed-rating-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="rating-score" id="speed-rating-score">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-section">
+                <div class="review-form">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="text" placeholder="評論">
+                    <button type="submit">張貼</button>
+                </div>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="review-user">小張</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-19</span>
+                        <p>喜歡香味舒服的淡淡的。</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">邱小媛</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-14</span>
+                        <p>很喜歡，味道很棒！送人、自用兩相宜！</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">林小佳</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-13</span>
+                        <p>出貨速度快，包裝仔細精美</p>
+                    </div>
+                    <div class="review">
+                        <span class="review-user">李小欣</span>
+                        <span class="review-rating">★★★★★</span>
+                        <span class="review-date">2024-05-12</span>
+                        <p>花香味濃郁，出貨快速 味道持續時間長</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <h1>商品規格</h1>
+            <div class="content1">
+                <p><b>Miss Dior迪奧
+                </b></p>
+                <table>
+                    <tr>
+                        <th>品牌名稱</th>
+                        <td>Dior 迪奧</td>
+                    </tr>
+                    <tr>
+                        <th>香味</th>
+                        <td>玫瑰調 花香調 清新</td>
+                    </tr>
+    
+                    <tr>
+                        <th>品牌定位</th>
+                        <td>專櫃</td>
+                    </tr>
+                    <tr>
+                        <th>濃度</th>
+                        <td>淡香水EDT</td>
+                    </tr>
+                    <tr>
+                        <th>對象與族群	</th>
+                        <td>女性</td>
+                    </tr>
+                    
+
+                    <tr>
+                        <th>款式</th>
+                        <td>一般</td>
+                    </tr>
+                    <tr>
+                        <th>容量</th>
+                        <td>50ml</td>
+                    </tr>
+                    <tr>
+                        <th>用途</th>
+                        <td>身體芳香</td>
+                    </tr>
+                    
+                 
+    
+                </table>
+           
+                <p>
+
+                <b>注意事項：</b>
+
+                <li>使用後若有過敏請即刻停止使用並請教醫師。</li>
+                <li>請將商品放置陰涼處以避免變質。</li>
+                <li>請置於陰涼處，請勿直接陽光照射，以免變質。</li>
+                <li>因電腦螢幕設定及個人觀感之差異，本賣場之商品圖片僅供參考，以收到實際商品為準。</li>
+                <li>本產品屬於私人消耗性產品，已拆封或使用過、無法恢復原狀、商品外盒損壞等均恕無法辦理退換貨。</li></p>
+            
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <h1>退換貨須知</h1>
+
+                <div class="content1">
+                    <div class="section reminder">
+                        <h2>提醒您：</h2>
+                        <ul>
+                            <li>「組合商品」若需辦理退貨，請依退換貨需知規定辦理，若為部分商品退貨則針對您已使用或保留之商品應另以市價計價，敬請注意。</li>
+                            <li>為保障消費者個人衛生，退換貨請保持商品為全新狀態，一經拆封或使用恕不接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section returns">
+                        <h2>退換貨須知：</h2>
+                        <ul>
+                            <li>商品到貨享十天猶豫期之權益（注意！猶豫期非試用期），辦理退貨商品必須全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能接受換貨一次。</li>
+                            <li>出貨已全程攝影，為保您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</li>
+                            <li>彩妝商品除商品本身有瑕疵外，未拆封商品仍享有十天猶豫期之退貨權利。但已拆封（如剪標、外拆膠帶等情形），依據《通知交易解除權合理例外情形適用準則》，本公司無法接受退換貨。</li>
+                        </ul>
+                    </div>
+                    <div class="section delivery">
+                        <h2>運送服務：</h2>
+                        <ul>
+                            <li>此商品可配送離島區域，您可均結帳時，選擇離島地址配送。</li>
+                            <li>商品已實際配貨且出門後退換貨日期起，依我們向您另行通知之內容為準。</li>
+                            <li>依照客戶指定配送之商品（約配送日期30日您未通知即取貨及領商品，為了保障您的權益，本公司得取消訂單，請客戶重新下單購買。</li>
+                        </ul>
+                    </div>
+                    <div class="section after-sales">
+                        <h2>售後服務：</h2>
+                        <ul>
+                            <li>如您收到商品，請依正常程序檢驗商品，若有發生新品瑕疵之情形，您可申請更換新品或退貨。</li>
+                            <li>若有疑問請撥打客服專線，或登入官網選擇聯絡我們。</li>
+                        </ul>
+                    </div>
+                </div>
+  
+    </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Y<sup>3</sup>   beauty</p>
+    </footer>
+    <script src="../jsp/product.js"></script>
+</body>
+</html>
