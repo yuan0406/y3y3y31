@@ -1,15 +1,16 @@
 let nextProductId = 6;
-
+            
 function addNewProduct() {
+    let newRowId = `productRow${nextProductId}`;
     let newRow = `
-        <tr>
+        <tr id="${newRowId}">
             <td>${nextProductId}</td>
             <td>New Product</td>
             <td>0</td>
             <td>0</td>
             <td>
-                <button class="edit-button" onclick="editProduct(${nextProductId})">修改</button>
-                <button class="delete-button" onclick="deleteProduct(${nextProductId})">刪除</button>
+                <button class="edit-button" onclick="editProduct('${newRowId}')">修改</button>
+                <button class="delete-button" onclick="deleteProduct('${newRowId}')">刪除</button>
             </td>
         </tr>
     `;
@@ -17,13 +18,14 @@ function addNewProduct() {
     nextProductId++;
 }
 
-function editProduct(productId) {
-    
-    let productName = document.getElementById('productTable').rows[productId].cells[1].innerText;
-    let productPrice = document.getElementById('productTable').rows[productId].cells[2].innerText;
-    let productStock = document.getElementById('productTable').rows[productId].cells[3].innerText;
+function editProduct(rowId) {
+    let row = document.getElementById(rowId);
+    let productId = row.cells[0].innerText;
+    let productName = row.cells[1].innerText;
+    let productPrice = row.cells[2].innerText;
+    let productStock = row.cells[3].innerText;
 
-    document.getElementById('editProductId').value = productId;
+    document.getElementById('editProductId').value = rowId;
     document.getElementById('editProductName').value = productName;
     document.getElementById('editProductPrice').value = productPrice;
     document.getElementById('editProductStock').value = productStock;
@@ -32,29 +34,26 @@ function editProduct(productId) {
 }
 
 function saveProduct() {
-    
-    let productId = document.getElementById('editProductId').value;
+    let rowId = document.getElementById('editProductId').value;
     let newName = document.getElementById('editProductName').value;
     let newPrice = document.getElementById('editProductPrice').value;
     let newStock = document.getElementById('editProductStock').value;
 
-    
-    document.getElementById('productTable').rows[productId].cells[1].innerText = newName;
-    document.getElementById('productTable').rows[productId].cells[2].innerText = newPrice;
-    document.getElementById('productTable').rows[productId].cells[3].innerText = newStock;
+    let row = document.getElementById(rowId);
+    row.cells[1].innerText = newName;
+    row.cells[2].innerText = newPrice;
+    row.cells[3].innerText = newStock;
 
-    
     document.getElementById('editForm').style.display = 'none';
 }
 
 function cancelEdit() {
-    
     document.getElementById('editForm').style.display = 'none';
 }
 
-function deleteProduct(productId) {
-    
+function deleteProduct(rowId) {
     if (confirm("確定要刪除這個商品嗎？")) {
-        document.getElementById('productTable').deleteRow(productId);
+        let row = document.getElementById(rowId);
+        row.remove();
     }
 }

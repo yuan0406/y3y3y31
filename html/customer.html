@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用戶資料</title>
+    <link rel="stylesheet" href="../css/Revise.css">
+</head>
+<body>
+    <div class="save-success">
+        <h1>用戶資料</h1>
+        <div class="section">
+            <h2>會員基本資料</h2>
+            <div class="form-group">
+                <label>會員編號：</label>
+                <span id="display-member-id"></span>
+            </div>
+            <div class="form-group">
+                <label>中文姓名：</label>
+                <span id="display-name"></span>
+            </div>
+            <div class="form-group">
+                <label>身份證字號：</label>
+                <span id="display-id-number"></span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>聯絡資訊</h2>
+            <div class="form-group">
+                <label>國別及區碼：</label>
+                <span id="display-region"></span>
+            </div>
+            <div class="form-group">
+                <label>完整聯絡地址：</label>
+                <span id="display-address"></span>
+            </div>
+        </div>
+        <div class="section highlighted">
+            <h2>行動電話</h2>
+            <div class="form-group">
+                <label>行動電話：</label>
+                <span id="display-phone"></span>
+            </div>
+        </div>
+        <div class="section highlighted">
+            <h2>電子信箱</h2>
+            <div class="form-group">
+                <label>電子信箱：</label>
+                <span id="display-email"></span>
+            </div>
+        </div>
+        <div class="form-actions">
+            <a href="Revise.html"><button>修改會員資料</button></a>
+            <button onclick="goBack()">上一頁</button>
+            <a href="history.html"><button>歷史清單</button></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get saved form data from localStorage
+            const formData = JSON.parse(localStorage.getItem("formData"));
+
+            // Display the saved form data
+            document.getElementById("display-member-id").textContent = formData.memberId;
+            document.getElementById("display-name").textContent = formData.name;
+            document.getElementById("display-id-number").textContent = formData.idNumber;
+            document.getElementById("display-region").textContent = formData.country + " " + formData.city + " " + formData.district;
+            document.getElementById("display-address").textContent = formData.address;
+            document.getElementById("display-phone").textContent = formData.phone;
+            document.getElementById("display-email").textContent = formData.email;
+        });
+
+        function goToHomepage() {
+            window.location.href = "index.html"; // Replace with the actual homepage URL
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

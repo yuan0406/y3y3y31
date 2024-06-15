@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <div class="login-section">
-            <h2>登入到您的帳戶</h2>
-            <form action="index.html" method="post">
+            <h2>登入賣家帳戶</h2>
+            <form action="back.html" method="post">
                 <div class="input-group">
                     <label for="email">電子郵件地址</label>
                     <input type="email" id="email" name="email" placeholder="電子郵件地址" required>
@@ -23,7 +23,7 @@
                     <input type="checkbox" id="remember-me" name="remember-me">
                     <label for="remember-me">記住我</label>
                 </div>
-                <button type="submit" class="login-button">登入</button>
+                <button type="submit">登入</button>
                 <a href="forget.html" class="forgot-password">忘記密碼?</a>
             </form>
             <div class="social-login">
@@ -36,9 +36,7 @@
         </div>
         <div class="register-section">
             <p>在線上旗艦店還沒有帳號</p>
-            <a href="register.html"><button class="register-button">立即註冊</button></a>
-            <a href="#"><button class="goBack" onclick="goBack()">返回上一頁</button></a>
-            <a href="seller.html"><button class="register-button">我是賣家</button></a>
+            <button class="goBack" onclick="goBack()">返回上一頁</button>
         </div>
     </div>
     <script src="../jsp/login.js"></script>
