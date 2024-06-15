@@ -101,9 +101,22 @@ button:hover {
     border: 1px solid #d3a297;
 }
 
-.register-button:hover {
-    background-color: #f0f0f0;
+.goBack{
+    background-color:white;
+    color: #d3a297;
+    border: 1px solid #d3a297;
 }
+
+.register-button:hover {
+    background-color: #d3a297;
+    color: white;
+}
+
+.goBack:hover{
+    background-color: #d3a297;
+    color: white;
+}
+
 h2{
     color: #d3a297;
 }

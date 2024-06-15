@@ -1,3 +1,4 @@
+
 .container{
     width: 80%;
     margin-left: auto;
@@ -33,6 +34,7 @@
     width: 80%;
     align-items:left;
     border: 1px solid #ebe9e9;
+    background-color: #d3a297;
 }
 
 .sp{
@@ -108,7 +110,7 @@
 .checked_button{
     background:transparent;
     color: white;
-    border: 2px solid palevioletred;
+    border: 2px solid #d3a297;
     text-decoration: none;
     border-radius: 6px;
     text-align: center;
@@ -126,11 +128,11 @@
 .checked_button {
       background-color: white; 
       color: black; 
-      border: 2px solid palevioletred;
+      border: 2px solid #d3a297;
 }
 
 .checked_button:hover {
-      background-color: palevioletred;
+      background-color: #d3a297;
       color: white;
 }
 
@@ -140,11 +142,11 @@
 }
 
 .del:hover{
-    color: palevioletred;
+    color: #d3a297;
 }
 
 .sumTotal{
-    color: palevioletred;
+    color: #d3a297;
 }
 
 
