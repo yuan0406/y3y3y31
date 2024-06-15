@@ -34,3 +34,7 @@ function searchStores() {
         });
     }
 }
+
+function goBack() {
+    window.history.back();
+}

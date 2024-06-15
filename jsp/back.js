@@ -1,5 +1,5 @@
 let nextProductId = 6;
-            
+
 function addNewProduct() {
     let newRowId = `productRow${nextProductId}`;
     let newRow = `
@@ -38,6 +38,12 @@ function saveProduct() {
     let newName = document.getElementById('editProductName').value;
     let newPrice = document.getElementById('editProductPrice').value;
     let newStock = document.getElementById('editProductStock').value;
+
+    // Check if the price is less than 1
+    if (newPrice < 1) {
+        alert('價格不能小於1');
+        return;
+    }
 
     let row = document.getElementById(rowId);
     row.cells[1].innerText = newName;

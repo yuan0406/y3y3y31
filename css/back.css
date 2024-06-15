@@ -14,8 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2 {
+h1,h2 {
     text-align: center;
 }
 
@@ -25,8 +24,7 @@ table {
     margin-top: 20px;
 }
 
-th,
-td {
+th,td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -36,10 +34,7 @@ th {
     background-color: #f2f2f2;
 }
 
-.edit-button,
-.delete-button,
-.add-button,
-.save-button {
+.edit-button,.delete-button,.add-button,.save-button {
     padding: 6px 12px;
     background-color: #d3a297;
     color: white;
@@ -48,10 +43,7 @@ th {
     cursor: pointer;
 }
 
-.edit-button:hover,
-.delete-button:hover,
-.add-button:hover,
-.save-button:hover {
+.edit-button:hover,.delete-button:hover,.add-button:hover,.save-button:hover {
     background-color: #b37d69;
 }
 
@@ -62,4 +54,15 @@ th {
 #addButton {
     float: right;
     margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+
 }
