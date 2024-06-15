@@ -1,0 +1,81 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+div {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #d3a297;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b48a82;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result h2 {
+    margin: 0 0 10px 0;
+    color: #007BFF;
+}
+
+#result p {
+    margin: 0;
+    color: #555;
+}
+
+
+.goBack {
+    display: block; /* 確保按鈕是塊級元素 */
+    margin: 20px auto 0 auto; /* 上下外邊距，並使按鈕水平居中 */
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* 新增這行來讓內容居中對齊 */
+}
