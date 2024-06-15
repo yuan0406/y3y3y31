@@ -1,4 +1,3 @@
-
 .container{
     width: 80%;
     margin-left: auto;
@@ -11,11 +10,12 @@
 }
 
 .items{
-    border:1px solid #ebe9e9
+    border:1px solid #ebe9e9;
 }
 
 .item{
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     margin: 8px;
 }
 
@@ -26,7 +26,6 @@
     margin-left: 6px;
     margin-right: 8px;
     padding-right: 8px;
-    
 }
 
 .intro{
@@ -46,7 +45,6 @@
     width: 16%
 }
 
-
 .item_name{
     display: flex;
     flex-direction: column;
@@ -58,7 +56,7 @@
     width: 15%;
 }
 
-.price,.num_control, .total, .operation{
+.price, .num_control, .total, .operation{
     width: 10%;
 }
 
@@ -85,11 +83,10 @@
     width: 18px;
     height: 22px;
     display: inline-block;
-    background-color:#ebe9e9;
+    background-color: #ebe9e9;
     color: #666;
     text-align: center;
     text-decoration: none;
-
 }
 
 .disabled{
@@ -108,7 +105,7 @@
 }
 
 .checked_button{
-    background:transparent;
+    background: transparent;
     color: white;
     border: 2px solid #d3a297;
     text-decoration: none;
@@ -116,24 +113,24 @@
     text-align: center;
     border: none;
     padding: 8px 12px;
-    text-align: center;
     display: inline-block;
     font-size: 18px;
     margin-right: 10%;
-    -webkit-transition-duration: 0.4s; 
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
     text-transform: uppercase;
 }
+
 .checked_button {
-      background-color: white; 
-      color: black; 
-      border: 2px solid #d3a297;
+    background-color: white;
+    color: black;
+    border: 2px solid #d3a297;
 }
 
 .checked_button:hover {
-      background-color: #d3a297;
-      color: white;
+    background-color: #d3a297;
+    color: white;
 }
 
 .del{
@@ -149,4 +146,60 @@
     color: #d3a297;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .intro {
+        margin-left: 5%;
+        width: 90%;
+    }
 
+    .item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .item_img {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        width: 80px;
+        height: 80px;
+    }
+
+    .item_name, .sku, .price, .num_control, .total, .operation {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .checked_button {
+        font-size: 16px;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .checkout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 14px;
+    }
+    
+    .item_img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .checked_button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

@@ -14,7 +14,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1,h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -24,7 +25,8 @@ table {
     margin-top: 20px;
 }
 
-th,td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -34,7 +36,10 @@ th {
     background-color: #f2f2f2;
 }
 
-.edit-button,.delete-button,.add-button,.save-button {
+.edit-button,
+.delete-button,
+.add-button,
+.save-button {
     padding: 6px 12px;
     background-color: #d3a297;
     color: white;
@@ -43,16 +48,14 @@ th {
     cursor: pointer;
 }
 
-.edit-button:hover,.delete-button:hover,.add-button:hover,.save-button:hover {
+.edit-button:hover,
+.delete-button:hover,
+.add-button:hover,
+.save-button:hover {
     background-color: #b37d69;
 }
 
 .input-field {
-    margin-bottom: 10px;
-}
-
-#addButton {
-    float: right;
     margin-bottom: 10px;
 }
 
@@ -63,6 +66,56 @@ th {
 }
 
 .logo {
+    width: 80px;
     height: 80px;
+}
 
+/* Media Queries for RWD */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #addButton {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .edit-button,
+    .delete-button,
+    .add-button,
+    .save-button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .edit-button,
+    .delete-button,
+    .add-button,
+    .save-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 4px;
+    }
 }
